@@ -73,7 +73,7 @@ public class StudentController : ControllerBase
     }
 
     [HttpDelete("DeleteStudent")]
-    public async Task<Response<string>> DeleteStudent([FromBody] int Id)
+    public async Task<Response<string>> DeleteStudent(int Id)
     {
         return await _studentService.DeleteStudent(Id);
     }
